@@ -1,0 +1,947 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(169, 169, 169, 0.301);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.contanier {
+  width: 95%;
+  margin: auto;
+}
+
+.bunner {
+  width: 100%;
+  height: 60px;
+  background-color: darkorange;
+}
+
+.bunner img {
+  width: 100%;
+  height: 60px;
+}
+
+.header {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.header .left,
+.center {
+  float: left;
+  width: 33%;
+}
+
+.header img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.header a {
+  color: darkorange;
+  text-decoration: none;
+}
+
+.header a:hover {
+  border-bottom: 1px solid darkorange;
+}
+
+.header .center {
+  text-align: center;
+}
+.header .center a {
+  margin: 10px;
+}
+.header .right {
+  text-align: right;
+}
+.nav .contanier {
+  background-color: white;
+  width: 95%;
+}
+.nav .contanier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.nav .contanier .left-1 {
+  width: 20%;
+}
+
+.nav .contanier .left-1 a img {
+  width: 100%;
+}
+
+.nav .center-1 {
+  width: 50%;
+}
+
+.nav .center-1 form {
+  display: flex;
+  align-items: center;
+}
+.nav .center-1 form input {
+  width: 100%;
+  padding: 11px;
+  margin: 5px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.nav .center-1 form button {
+  padding: 12px;
+  background-color: darkorange;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+}
+.nav .right-1 {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav .right-1 a {
+  text-decoration: none;
+  color: black;
+}
+.nav .right-1 a:hover {
+  color: darkorange;
+}
+.section-1 {
+  padding: 10px 0;
+}
+
+.section-1 .contanier {
+  display: flex;
+}
+.section-1 .left {
+  background-color: white;
+  width: 25%;
+  padding: 10px;
+  margin-right: 10px;
+}
+.section-1 .left .main {
+  padding: 8px;
+}
+
+.section-1 .left .main a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-1 .left .main a:hover {
+  color: darkorange;
+}
+
+.section-1 .center {
+  width: 63%;
+}
+
+.section-1 .center .slader {
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: slader;
+  height: 400px;
+  background-image: url("../img/1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes slader {
+  0% {
+    background-image: url("../img/2.jpg");
+  }
+
+  15% {
+    background-image: url("../img/3.gif");
+  }
+
+  30% {
+    background-image: url("../img/4.png");
+  }
+
+  50% {
+    background-image: url("../img/5.png");
+  }
+
+  100% {
+    background-image: url("../img/6.jpg");
+  }
+}
+
+.section-1 .right-section {
+  margin-left: 10px;
+}
+
+.section-1 .right-section .top img,
+.bottom img {
+  width: 200px;
+  height: 200px;
+}
+.section-2 {
+  margin: 20px 0;
+}
+.section-2 .contanier {
+  background-color: white;
+  overflow: hidden;
+}
+.section-2 .contanier .main3 a img {
+  margin: 10px;
+  width: 120px;
+  height: 150px;
+}
+.section-2 .main3 {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-name: slader-2;
+}
+
+@keyframes slader-2 {
+  0% {
+    margin-left: 5px;
+  }
+  10% {
+    margin-left: 10px;
+  }
+  20% {
+    margin-left: 15px;
+  }
+  30% {
+    margin-left: 20px;
+  }
+  40% {
+    margin-left: 25px;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  60% {
+    margin-left: 35px;
+  }
+  70% {
+    margin-left: 40px;
+  }
+  80% {
+    margin-left: 45px;
+  }
+  90% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 55px;
+  }
+}
+.section-3 {
+  margin: 20px 0;
+}
+.section-3 .contanier {
+  background-color: #fff;
+  overflow: hidden;
+}
+.section-3 .main4 h3 {
+  padding: 10px;
+  font-size: 30px;
+}
+.parent3 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.parent3 .main5 a {
+  text-decoration: none;
+  color: black;
+}
+.parent3 .main5 {
+  font-size: 20px;
+  width: calc(100% / 4);
+}
+.parent3 .main5 a p {
+  margin: 5px 0;
+}
+.parent3 .main5 a span {
+  display: block;
+  margin: 5px 0;
+}
+.parent3 .main5 a del {
+  color: rgba(255, 0, 0, 0.841);
+  font-size: 15px;
+}
+.parent4 {
+  padding: 20px;
+  margin-left: 5px;
+  display: flex;
+  align-content: space-around;
+}
+
+.section-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section-4 .contanier {
+  background-color: white;
+  width: 95%;
+  overflow: hidden;
+}
+.parent4 .contanier {
+  display: flex;
+}
+.parent4 .main6 a {
+  text-decoration: none;
+  color: black;
+}
+.parent4 .main6 {
+  font-size: 20px;
+}
+.parent4 .main6 a p {
+  margin: 5px 0;
+}
+
+.parent4 .main6 a span {
+  display: block;
+  margin: 5px 0;
+}
+.parent4 .main6 a del {
+  color: rgba(255, 0, 0, 0.841);
+  font-size: 15px;
+}
+.section-5{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section-5 .contanier {
+  background-color: white;
+  width: 95%;
+  overflow: hidden;
+}
+.parent5 {
+  padding: 20px;
+  display: flex;
+}
+.parent5 .main7 a {
+  text-decoration: none;
+  color: black;
+}
+.parent5 .main7 {
+  font-size: 20px;
+}
+
+.parent5 .main7 a p {
+  margin: 5px 0;
+}
+
+.parent5 .main7 a span {
+  display: block;
+  margin: 5px 0;
+}
+
+.section-6 .contanier {
+  background-color: white;
+  overflow: hidden;
+}
+.parent6 {
+  display: flex;
+  padding: 20px;
+}
+.parent6 .main8 a {
+  text-decoration: none;
+  color: black;
+}
+.parent6 .main8 {
+  font-size: 20px;
+}
+.parent6 .main7 a p {
+  margin: 5px 0;
+}
+
+.parent6 .main8 a span {
+  display: block;
+  margin: 5px 0;
+}
+.parent6 .main8 a del {
+  color: rgba(255, 0, 0, 0.841);
+  font-size: 15px;
+}
+.last .contanier {
+  background-color: red;
+  padding: 20px;
+  display: flex;
+}
+.last .contanier .left {
+  width: 20%;
+  color: white;
+  text-align: left;
+}
+.last .center {
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+.last .contanier .right {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+.right span {
+  display: block;
+}
+
+.section-7 {
+  margin: 5px;
+}
+.section-7 .contanier .last2 {
+  background-color: bisque;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.section-7 .last3 {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+}
+.section-7 .last3 .left a img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.section-7 .last3 .right a img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.section-8 .last4 {
+  background-color: bisque;
+  width: 100%;
+  text-align: center;
+}
+.section-8 .last4 {
+  background-color: white;
+  display: flex;
+}
+.section-8 .last4 .left a img {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+.section-8 .last4 .right a img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.section-9 {
+  margin: 5px 0;
+}
+
+.section-9 .contanier {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  background-color:bisque;
+}
+.section-9 .contanier .left h5 {
+  font-size: 30px;
+}
+.section-9 .contanier .right a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.section-10 .contanier {
+  padding: 20px 0;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+.section-11 .contanier {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+}
+.section-11 .contanier .foot2 a img {
+  width: 150px;
+  height: 150px;
+}
+.section-11 .contanier .foot3 a img {
+  width: 150px;
+  height: 150px;
+}
+.section-12 .contanier {
+  width: 95%;
+  padding: 20px 0;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+
+}
+.section-11 .contanier .foot4 a img {
+  width: 100%;
+  height: 400px;
+}
+
+
+.section-14 .contanier {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.section-14 .contanier .lon {
+  margin-left: 10px;
+}
+
+.section-14 .contanier .lon h3 {
+  padding: 10px;
+
+}
+
+.section-14 .contanier .lon p {
+  padding: 10px;
+
+}
+.section-14 .contanier .lon p a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.section-14 .contanier .lon p a:hover {
+  color: orange;
+}
+
+.section-15 {
+  background-color: #0e0d0d;
+  margin-top: 30px;
+}
+
+.section-15 .contanier .city {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.section-15 .contanier .city .lonn-2 {
+  color: white;
+  padding: 10px;
+  margin-top:50px ;
+}
+
+.section-15 .contanier .city .lonn-2 form input {
+  text-align: center;
+  padding: 15px;
+  width: 50%;
+  margin-top:5px;
+  border-radius: 5%;
+  outline: none;
+}
+
+.section-15 .contanier .city .lonn-2 form {
+  margin-top: 10px;
+}
+.section-15 .contanier .city .lonn-2 form span {
+  padding: 15px;
+  border: 1px solid rgba(255, 252, 252, 0.719);
+  border-radius: 5%;
+}
+
+.section-15 .contanier .city .lonn-2 form span:hover {
+  border: 1px solid orange;
+  color: orange;
+}
+
+.section-15 .contanier .city .lonn-3 {
+  color: white;
+  /* padding: 15px; */
+
+}
+
+.section-15 .contanier .city .lonn-3 h3 {
+  padding-bottom:10px ;
+}
+
+
+.section-15 .contanier .city .lonn-3 a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.section-15 .contanier .city .lonn-3 a:hover {
+  border: 1px solid orange;
+  color: orange;
+}
+.section-15 .contanier .city .lonn-3 a i {
+  padding-top: 20px;
+  margin-left: 10px;
+
+}
+
+.section-16 {
+  background-color: rgb(56, 54, 54);
+}
+
+.section-16 .contanier .city-city {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.section-16 .contanier .city-city .one-1 h5{
+  color: white;
+  padding-bottom: 5px;
+}
+
+.section-16 .contanier .city-city .one-1 ul {
+  list-style: none;
+}
+
+.section-16 .contanier .city-city .one-1 ul li a {
+  text-decoration: none;
+  color: rgb(172, 160, 160);
+}
+
+.section-16 .contanier .city-city .one-1 ul li a:hover {
+  border-bottom: 1px solid rgb(172, 160, 160);
+
+}
+
+.section-16 .contanier .city-city-1 {
+  margin: 20px;
+  color: white;
+}
+
+
+.section-16 .contanier .city-city-1 .two-2 a img {
+  width: 30px;
+}
+
+.section-16 .contanier .city-city-1 .two-2 a img:hover {
+  background-color: orange;
+}
+
+.section-16 .contanier .city-city-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-16 .contanier .city-city-2 ul li a {
+  color: rgb(172, 160, 160);
+}
+
+.section-16 .contanier .city-city-2 ul li a:hover {
+  border-bottom: 1px solid rgb(172, 160, 160) ;
+}
+
+
+.section-16 .contanier .city-city-3 {
+  margin: 5px;
+  border-top: 1px solid rgb(172, 160, 160) ;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-16 .contanier .city-city-3 a {
+  color: white;
+  padding: 10px;
+}
+
+.section-16 .contanier .city-city-3 a:hover {
+  color: chocolate;
+}
+
+
+@media (min-width:200px) and (max-width:1200px) {
+  .bunner {
+    display: none;
+  }
+  .header {
+    width: 80%;
+  }
+  .header .center {
+    display: none;
+  }
+  .header .right {
+    padding: 5px;
+  }
+  .header .left {
+    width: 45%;
+  }
+
+  .nav .contanier .left-1 a img {
+    width: 80%;
+  }
+
+  .nav .contanier {
+        width: 100%;
+        margin: inherit;
+  }
+
+    .nav .center-1 {
+      width: 80%;
+    }
+  .nav .right-1 {
+    display: none;
+  }
+
+  .section-1 .left {
+    display: none;
+  }
+
+
+.section-1 .right-section {
+  display: none;
+}
+
+.section-1 .center {
+    width: 100%;
+}
+
+.section-2 .main3 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-2 .contanier .main3 a img {
+    width: 69%;
+    height: 200px;
+}
+
+.contanier {
+    width: 93%;
+    margin: auto;
+}
+
+.section-3 .main4 h3 {
+    text-align: center;
+}
+
+.parent3 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent3 .main5 {
+    width: 100%;
+}
+
+
+.parent3 .main5 a span {
+    text-align: center;
+}
+
+
+.parent4 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.parent4 .main5 {
+    width: 100%;
+}
+.parent4 .main6 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.parent4 .main5 a span {
+    text-align: center;
+}
+
+
+.parent5 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.parent5 .main7 a span {
+    text-align: center;
+
+}
+
+
+.parent6 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.parent6 .main8 {
+    text-align: center;
+
+}
+
+
+.last .contanier .left, .last .contanier .right{
+  display: none;
+}
+
+.last .contanier .center {
+  width: 90%;
+}
+
+
+.section-9 .contanier .left h5 {
+    font-size: 20px;
+}
+
+.section-9 .contanier .right a {
+    font-size: 25px;
+}
+
+.section-10 .contanier .foot1 h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-11 .contanier .foot3 a img {
+    width: 100%;
+}
+
+.section-11 .contanier .foot4 a img {
+    width: 100%;
+    height: 150px;
+}
+
+
+.section-14 .contanier .lon {
+    text-align: center;
+}
+
+
+.section-15 {
+display: none;
+}
+
+.section-16 {
+  margin-top: 10px;
+}
+.section-16 .contanier .city-city {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-16 .contanier .city-city .one-1 {
+  text-align: center;
+  line-height: 30px;
+}
+
+.section-16 .contanier .city-city-1  {
+  text-align: center;
+}
+
+.section-16 .contanier .city-city-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
